@@ -1,0 +1,447 @@
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: #333;
+  color: white;
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.accent-color {
+  color: #32cd32;
+}
+
+@keyframes animatedfname {
+  0% {
+    opacity: 0;
+    position: relative;
+    left: -500px;
+  }
+
+  70% {
+    opacity: 0.7;
+    position: relative;
+    left: 30px;
+  }
+
+  90% {
+    opacity: 0.9;
+    position: relative;
+    left: -10px;
+  }
+
+  100% {
+    opacity: 1;
+    position: relative;
+    left: 0px;
+  }
+}
+
+@keyframes animatedlname {
+  0% {
+    opacity: 0;
+    position: relative;
+    left: 500px;
+  }
+
+  70% {
+    opacity: 0.7;
+    position: relative;
+    left: -30px;
+  }
+
+  90% {
+    opacity: 0.9;
+    position: relative;
+    left: 10px;
+  }
+
+  100% {
+    opacity: 1;
+    position: relative;
+    left: 0px;
+  }
+}
+
+@keyframes animatedimg {
+  0% {
+    opacity: 0;
+    position: relative;
+    top: -500px;
+  }
+
+  70% {
+    opacity: 0.7;
+    position: relative;
+    top: 30px;
+  }
+
+  90% {
+    opacity: 0.9;
+    position: relative;
+    top: -10px;
+  }
+
+  100% {
+    opacity: 1;
+    position: relative;
+    top: 0px;
+  }
+}
+
+.animated-fname {
+  position: relative;
+  animation-name: animatedfname;
+  animation-duration: 1s;
+}
+
+.animated-lname {
+  position: relative;
+  animation-name: animatedlname;
+  animation-duration: 1s;
+}
+
+.animated-img {
+  position: relative;
+  animation-name: animatedimg;
+  animation-duration: 1s;
+}
+
+.nav-menu-mobile {
+  display: none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.nav-bar {
+  align-items: center;
+  height: 12rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+
+.nav-bar,
+.nav-logo,
+.nav-links,
+.nav-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-links {
+  font-size: xx-large;
+  text-decoration: none;
+  gap: 12rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: #32cd32;
+  scale: 1.2;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-links-mobile {
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.home-btn {
+  position: fixed;
+  right: -50px;
+  bottom: 2rem;
+  background-color: #32cd32;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.1s ease-in-out;
+}
+
+.home-btn.hide {
+  right: 12rem;
+}
+
+.container {
+  display: flex;
+  overflow: hidden;
+  height: 75vh;
+  gap: 6rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 50%;
+}
+
+.content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  width: 50%;
+}
+
+.header-img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#about,
+#projects,
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1600px) {
+  .header-img {
+    width: 400px;
+    height: 400px;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    font-size: x-large;
+    gap: 6rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-bar {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  @keyframes animatedfname {
+    0% {
+      opacity: 0;
+      position: relative;
+      left: -500px;
+    }
+
+    70% {
+      opacity: 0.7;
+      position: relative;
+      left: 10px;
+    }
+
+    90% {
+      opacity: 0.9;
+      position: relative;
+      left: -5px;
+    }
+
+    100% {
+      opacity: 1;
+      position: relative;
+      left: 0px;
+    }
+  }
+
+  @keyframes animatedlname {
+    0% {
+      opacity: 0;
+      position: relative;
+      left: 500px;
+    }
+
+    70% {
+      opacity: 0.7;
+      position: relative;
+      left: -10px;
+    }
+
+    90% {
+      opacity: 0.9;
+      position: relative;
+      left: 5px;
+    }
+
+    100% {
+      opacity: 1;
+      position: relative;
+      left: 0px;
+    }
+  }
+
+  .home-btn.hide {
+    right: 6rem;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+    height: 100%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .nav-links {
+    font-size: large;
+    gap: 2rem;
+  }
+  .content-left {
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+  }
+  .content-right {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-bar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .home-btn.hide {
+    right: 2rem;
+  }
+
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-menu-mobile {
+    display: inline-block;
+    z-index: 1000;
+  }
+
+  @keyframes navmenu {
+    0% {
+      height: 0vh;
+      opacity: 0;
+    }
+    100% {
+      height: 90vh;
+      opacity: 1;
+    }
+  }
+
+  .nav-links-mobile {
+    display: none;
+    background-color: rgba(51, 51, 51, 0.8);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+    animation-name: navmenu;
+    animation-duration: 0.2s;
+  }
+
+  .nav-links-mobile ul {
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    text-align: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 12rem 0;
+    margin: 0;
+    animation-name: navmenu;
+    animation-duration: 0.2s;
+  }
+
+  .show {
+    display: inline-flex;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-bar {
+    height: 6rem;
+  }
+  .header-img {
+    margin-top: 6rem;
+    width: 200px;
+    height: 200px;
+  }
+}
