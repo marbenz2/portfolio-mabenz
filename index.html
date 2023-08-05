@@ -8,7 +8,9 @@
   </head>
   <body>
     <nav id="home" class="nav-bar">
-      <div class="nav-logo">LOGO</div>
+      <div class="nav-logo">
+        <img class="logo" src="./assets/logo.png" alt="mabenz-logo" />
+      </div>
       <div id="nav-menu-mobile" class="nav-menu-mobile" onclick="toggleMenu()">
         <div class="bar1"></div>
         <div class="bar2"></div>
@@ -20,21 +22,48 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <div class="nav-social">SOCIAL</div>
+      <div class="nav-social">
+        <a
+          href="https://github.com/marbenz2"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="./assets/icons8-github-50.png" alt="Github"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/marcel-benzinger-a9a57211b/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="./assets/icons8-linkedin-50.png" alt="Linked In"
+        /></a>
+      </div>
     </nav>
-    <div id="home-btn" class="home-btn">
-      <a href="#home">&uarr;</a>
-    </div>
+    <a href="#home" id="home-btn" class="home-btn"><span>&uarr;</span></a>
     <section id="nav-links-mobile" class="nav-links-mobile">
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li>
+          <a
+            href="https://github.com/marbenz2"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="./assets/icons8-github-50.png" alt="Github"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/marcel-benzinger-a9a57211b/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./assets/icons8-linkedin-50.png" alt="Linked In"
+          /></a>
+        </li>
       </ul>
     </section>
-    <header id="main" class="container">
-      <section class="content-left text-right">
+    <header id="main" class="container-header">
+      <section class="header-left text-right">
         <h1>
           Hi, I'm <br />
           <span id="f-name" class="animated-fname accent-color">Marcel</span>
@@ -45,7 +74,7 @@
           from scratch.
         </h3>
       </section>
-      <aside class="content-right">
+      <aside class="header-right">
         <img
           class="animated-img header-img"
           src="/assets/marshmello_logo-wallpaper-2560x1440.jpg"
@@ -55,23 +84,49 @@
         />
       </aside>
     </header>
-    <section id="about">
-      <aside>TEST</aside>
-      <section>TEST</section>
+    <section id="about" class="container-content">
+      <aside class="content-right self-right">
+        <h1 class="accent-color">ABOUT ME</h1>
+      </aside>
+      <section class="content-left self-left">
+        <h4>
+          I'm a 37 years old self-taught Frontend Web Developer with two years
+          of experience. My passion for coding and designing drives me to create
+          seamless user experiences.<br />I thrive on challenges, continuously
+          improving and adapting to the ever-changing tech landscape.<br /><br />Let's
+          work together and bring your projects to life!
+        </h4>
+      </section>
     </section>
-    <section id="skills">
-      <section>TEST</section>
-      <aside>TEST</aside>
+    <section id="skills" class="container-content">
+      <aside class="content-left self-left">
+        <h1 class="accent-color">SKILLS</h1>
+      </aside>
+      <section class="content-right self-right">
+        <ul>
+          <li><img src="./assets/icons8-html-50.png" alt="HTML" /></li>
+          <li><img src="./assets/icons8-css-50.png" alt="CSS" /></li>
+          <li>
+            <img src="./assets/icons8-javascript-50.png" alt="Javascript" />
+          </li>
+          <li><img src="./assets/icons8-sql-50.png" alt="SQL" /></li>
+          <li><img src="./assets/icons8-react-native-50.png" alt="React" /></li>
+        </ul>
+      </section>
     </section>
-    <section id="projects">
-      <aside>TEST</aside>
-      <section>TEST</section>
+    <section id="projects" class="container-content">
+      <aside class="content-right self-right">
+        <h1 class="accent-color">PROJECTS</h1>
+      </aside>
+      <section class="content-left self-left">TEST</section>
     </section>
-    <section id="contact">
-      <section>TEST</section>
-      <aside>TEST</aside>
+    <section id="contact" class="container-content">
+      <aside class="content-left self-left">
+        <h1 class="accent-color">CONTACT</h1>
+      </aside>
+      <aside class="content-right self-right">TEST</aside>
     </section>
-    <footer></footer>
+    <footer>© 2023 - MABENZ</footer>
     <script src="script.js"></script>
   </body>
 </html>
