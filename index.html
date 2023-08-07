@@ -11,7 +11,12 @@
       <div class="nav-logo">
         <img class="logo" src="./assets/logo.png" alt="mabenz-logo" />
       </div>
-      <div id="nav-menu-mobile" class="nav-menu-mobile" onclick="toggleMenu()">
+      <div
+        title="Mobile Menu"
+        id="nav-menu-mobile"
+        class="nav-menu-mobile"
+        onclick="toggleMenu()"
+      >
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
@@ -38,21 +43,22 @@
         /></a>
       </div>
     </nav>
-    <a href="#home" id="home-btn" class="home-btn"><span>&uarr;</span></a>
-    <section id="nav-links-mobile" class="nav-links-mobile">
+    <nav id="nav-links-mobile" class="nav-links-mobile">
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li>
+        <li class="socials-mobile">
           <a
+            title="Github"
             href="https://github.com/marbenz2"
             target="_blank"
             rel="noopener noreferrer"
             ><img src="./assets/icons8-github-50.png" alt="Github"
           /></a>
           <a
+            title="LinkedIn"
             href="https://www.linkedin.com/in/marcel-benzinger-a9a57211b/"
             target="_blank"
             rel="noopener noreferrer"
@@ -61,34 +67,30 @@
           /></a>
         </li>
       </ul>
-    </section>
+    </nav>
     <header id="main" class="container-header">
-      <section class="header-left text-right">
+      <aside class="header-left text-right">
         <h1>
           Hi, I'm <br />
-          <span id="f-name" class="animated-fname accent-color">Marcel</span>
-          <span id="l-name" class="animated-lname accent-color">Benzinger</span>
+          <span id="f-name" class="slide-in-left accent-color">Marcel</span>
+          <span id="l-name" class="slide-in-left accent-color">Benzinger</span>
         </h1>
         <h3>
-          I'm a front-end developer with a passion for building beautiful things
-          from scratch.
+          I'm a self-taught front-end developer with a passion for building
+          beautiful things from scratch.
         </h3>
-      </section>
+      </aside>
       <aside class="header-right">
         <img
-          class="animated-img header-img"
-          src="/assets/marshmello_logo-wallpaper-2560x1440.jpg"
+          class="slide-in-right header-img"
+          src="/assets/avatar.png"
           alt="MABENZ"
-          width="300px"
-          height="auto"
         />
       </aside>
     </header>
     <section id="about" class="container-content">
-      <aside class="content-right self-right">
-        <h1 class="accent-color">ABOUT ME</h1>
-      </aside>
-      <section class="content-left self-left">
+      <h2 class="accent-color">ABOUT ME</h2>
+      <div class="card-content">
         <h4>
           I'm a 37 years old self-taught Frontend Web Developer with two years
           of experience. My passion for coding and designing drives me to create
@@ -96,37 +98,265 @@
           improving and adapting to the ever-changing tech landscape.<br /><br />Let's
           work together and bring your projects to life!
         </h4>
-      </section>
+      </div>
     </section>
     <section id="skills" class="container-content">
-      <aside class="content-left self-left">
-        <h1 class="accent-color">SKILLS</h1>
-      </aside>
-      <section class="content-right self-right">
-        <ul>
-          <li><img src="./assets/icons8-html-50.png" alt="HTML" /></li>
-          <li><img src="./assets/icons8-css-50.png" alt="CSS" /></li>
-          <li>
-            <img src="./assets/icons8-javascript-50.png" alt="Javascript" />
+      <h2 class="accent-color">SKILLS</h2>
+      <div class="card-content">
+        <ul class="item-wrapper">
+          <li class="direction-column center-items">
+            <img src="./assets/icons8-html-50.png" alt="HTML" width="50" />
+            <h6>HTML</h6>
           </li>
-          <li><img src="./assets/icons8-sql-50.png" alt="SQL" /></li>
-          <li><img src="./assets/icons8-react-native-50.png" alt="React" /></li>
+          <li class="direction-column center-items">
+            <img src="./assets/icons8-css-50.png" alt="CSS" width="50" />
+            <h6>CSS</h6>
+          </li>
+          <li class="direction-column center-items">
+            <img
+              src="./assets/icons8-tailwind-css-50.png"
+              alt="Tailwind"
+              width="50"
+            />
+            <h6>Tailwind</h6>
+          </li>
+          <li class="direction-column center-items">
+            <img
+              src="./assets/icons8-javascript-50.png"
+              alt="Javascript"
+              width="50"
+            />
+            <h6>Javascript</h6>
+          </li>
+          <li class="direction-column center-items">
+            <img
+              src="./assets/icons8-react-native-50.png"
+              alt="React"
+              width="50"
+            />
+            <h6>React</h6>
+          </li>
+          <li class="direction-column center-items">
+            <img src="./assets/icons8-node-js-50.png" alt="NodeJs" width="50" />
+            <h6>node.js</h6>
+          </li>
+          <li class="direction-column center-items">
+            <img src="./assets/icons8-sql-50.png" alt="SQL" width="50" />
+            <h6>PostgreSQL</h6>
+          </li>
+          <li class="direction-column center-items">
+            <img
+              src="./assets/icons8-mongo-db-50.png"
+              alt="MongoDb"
+              width="50"
+            />
+            <h6>Mongo DB</h6>
+          </li>
+          <li class="direction-column center-items">
+            <img src="./assets/icons8-git-50.png" alt="Git" width="50" />
+            <h6>Git</h6>
+          </li>
+          <li class="direction-column center-items">
+            <img
+              src="./assets/icons8-benutzergruppen-50.png"
+              alt="Teamplayer"
+              width="50"
+            />
+            <h6>Teamplayer</h6>
+          </li>
         </ul>
-      </section>
+      </div>
     </section>
     <section id="projects" class="container-content">
-      <aside class="content-right self-right">
-        <h1 class="accent-color">PROJECTS</h1>
-      </aside>
-      <section class="content-left self-left">TEST</section>
+      <h2 class="accent-color">PROJECTS</h2>
+      <div class="container-project">
+        <div class="card-project">
+          <img
+            class="project-image"
+            src="./assets/MABENZ-Portfolio.png"
+            alt="MABENZ Portfolio"
+          />
+          <div class="info">
+            <h5>
+              MARBENZ Portfolio <br />
+              <span class="badge">Website</span>
+            </h5>
+
+            <p>Mein erstes kleines Projekt für mein eigenes Portfolio.</p>
+            <div class="project-footer">
+              <div class="container-badge direction-row">
+                <div class="badge">HTML</div>
+                <div class="badge">CSS</div>
+                <div class="badge">JS</div>
+              </div>
+              <div class="project-action">
+                <div class="direction-column center-items">
+                  <a
+                    title="Github"
+                    href="https://github.com/marbenz2/portfolio-mabenz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      src="./assets/icons8-github-50.png"
+                      alt="Github"
+                      width="30"
+                  /></a>
+                  <h6>Github</h6>
+                </div>
+                <div class="direction-column center-items">
+                  <a
+                    title="Live"
+                    href="https://github.com/marbenz2/portfolio-mabenz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      src="./assets/icons8-youtube-live-50.png"
+                      alt="Github"
+                      width="30"
+                  /></a>
+                  <h6>Live</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-project">
+          <img
+            class="project-image"
+            src="./assets/MABENZ-Portfolio.png"
+            alt="MABENZ Portfolio"
+          />
+          <div class="info">
+            <h5>
+              MARBENZ Portfolio <br />
+              <span class="badge">Website</span>
+            </h5>
+
+            <p>Mein erstes kleines Projekt für mein eigenes Portfolio.</p>
+            <div class="project-footer">
+              <div class="container-badge direction-row">
+                <div class="badge">HTML</div>
+                <div class="badge">CSS</div>
+                <div class="badge">JS</div>
+              </div>
+              <div class="project-action">
+                <div class="direction-column center-items">
+                  <a
+                    title="Github"
+                    href="https://github.com/marbenz2/portfolio-mabenz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      src="./assets/icons8-github-50.png"
+                      alt="Github"
+                      width="30"
+                  /></a>
+                  <h6>Github</h6>
+                </div>
+                <div class="direction-column center-items">
+                  <a
+                    title="Live"
+                    href="https://github.com/marbenz2/portfolio-mabenz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      src="./assets/icons8-youtube-live-50.png"
+                      alt="Github"
+                      width="30"
+                  /></a>
+                  <h6>Live</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-project">
+          <img
+            class="project-image"
+            src="./assets/MABENZ-Portfolio.png"
+            alt="MABENZ Portfolio"
+          />
+          <div class="info">
+            <h5>
+              MARBENZ Portfolio <br />
+              <span class="badge">Website</span>
+            </h5>
+
+            <p>Mein erstes kleines Projekt für mein eigenes Portfolio.</p>
+            <div class="project-footer">
+              <div class="container-badge direction-row">
+                <div class="badge">HTML</div>
+                <div class="badge">CSS</div>
+                <div class="badge">JS</div>
+              </div>
+              <div class="project-action">
+                <div class="direction-column center-items">
+                  <a
+                    title="Github"
+                    href="https://github.com/marbenz2/portfolio-mabenz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      src="./assets/icons8-github-50.png"
+                      alt="Github"
+                      width="30"
+                  /></a>
+                  <h6>Github</h6>
+                </div>
+                <div class="direction-column center-items">
+                  <a
+                    title="Live"
+                    href="https://github.com/marbenz2/portfolio-mabenz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      src="./assets/icons8-youtube-live-50.png"
+                      alt="Github"
+                      width="30"
+                  /></a>
+                  <h6>Live</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="contact" class="container-content">
-      <aside class="content-left self-left">
-        <h1 class="accent-color">CONTACT</h1>
-      </aside>
-      <aside class="content-right self-right">TEST</aside>
+      <h2 class="accent-color">CONTACT</h2>
+      <form class="container-form center" action="#home" method="POST">
+        <div class="container-info">
+          <div class="direction-column">
+            <label class="label" for="name">Name</label>
+            <input class="input" type="text" name="name" id="name" required />
+          </div>
+          <div class="direction-column">
+            <label class="label" for="email">Email</label>
+            <input
+              class="input"
+              type="email"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+        </div>
+        <div class="direction-column">
+          <label class="label" for="message">Nachricht</label>
+          <textarea
+            class="textarea"
+            name="message"
+            id="message"
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
     </section>
     <footer>© 2023 - MABENZ</footer>
+    <a title="Home Button" href="#home" id="home-btn" class="home-btn"
+      ><span>&uarr;</span></a
+    >
     <script src="script.js"></script>
   </body>
 </html>
