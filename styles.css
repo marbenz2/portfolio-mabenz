@@ -788,6 +788,10 @@ section ul {
     font-size: var(--text-size-heading);
   }
 
+  h4 {
+    font-size: var(--text-size-sm);
+  }
+
   .heading-position {
     top: 2rem;
   }
