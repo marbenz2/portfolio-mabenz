@@ -48,6 +48,7 @@
   --text-size-xl: 4rem;
   --text-size-xxl: 6rem;
   --text-size-xxxl: 8rem;
+  --text-size-heading: 3rem;
 
   --nav-bar-height-web: 12rem;
   --nav-bar-height-mobile: fit-content;
@@ -784,8 +785,13 @@ section ul {
 
 @media screen and (max-width: 600px) {
   h2 {
-    font-size: var(--text-size-lg);
+    font-size: var(--text-size-heading);
   }
+
+  .heading-position {
+    top: 2rem;
+  }
+
   .header-img {
     width: 200px;
     height: auto;
