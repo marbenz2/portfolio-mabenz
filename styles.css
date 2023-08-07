@@ -56,10 +56,15 @@
   --container-header-height-web: calc(100vh - var(--nav-bar-height-web));
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -95,8 +100,8 @@ h3 {
 }
 
 h4 {
-  font-size: var(--text-size-md);
-  font-weight: 400;
+  font-size: var(--text-size-sm);
+  font-weight: 300;
   margin: 0;
   padding: 0;
   line-height: var(--text-height-md);
@@ -121,6 +126,9 @@ h6 {
 p {
   font-size: var(--text-size-sm);
   line-height: var(--text-height-md);
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
 }
 
 a {
@@ -447,7 +455,6 @@ footer {
 
 .content-sizing {
   width: fit-content;
-  height: 100%;
 }
 
 .heading-position {
@@ -553,6 +560,7 @@ section ul {
 
 .project-info {
   height: 100%;
+  padding: 1rem 0;
 }
 
 /* FORM */
@@ -746,8 +754,7 @@ section ul {
     font-size: var(--text-size-xl);
   }
 
-  h3,
-  h4 {
+  h3 {
     font-size: var(--text-size-md);
   }
 
@@ -786,10 +793,6 @@ section ul {
 @media screen and (max-width: 600px) {
   h2 {
     font-size: var(--text-size-heading);
-  }
-
-  h4 {
-    font-size: var(--text-size-sm);
   }
 
   .heading-position {
