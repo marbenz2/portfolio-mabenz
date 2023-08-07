@@ -783,6 +783,9 @@ section ul {
 }
 
 @media screen and (max-width: 600px) {
+  h2 {
+    font-size: var(--text-size-lg);
+  }
   .header-img {
     width: 200px;
     height: auto;
