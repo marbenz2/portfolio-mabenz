@@ -25,22 +25,29 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="nav-social">
         <a
+          title="Get in touch via mail"
+          class="button-navigation mail-icon"
+          href="mailto:benzinger.marcel@gmail.com?subject=Contact%20from%20portfolio%20website&amp;body=Add%20some%20text..."
+        >
+        </a>
+        <a
+          title="See my Github profile"
+          class="button-navigation github-icon"
           href="https://github.com/marbenz2"
           target="_blank"
           rel="noopener noreferrer"
-          ><img src="./assets/icons8-github-50.png" alt="Github"
-        /></a>
+        ></a>
         <a
+          title="Get in touch via Linkedin"
+          class="button-navigation linkedin-icon"
           href="https://www.linkedin.com/in/marcel-benzinger-a9a57211b/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="./assets/icons8-linkedin-50.png" alt="Linked In"
-        /></a>
+        </a>
       </div>
     </nav>
     <nav id="nav-links-mobile" class="nav-links-mobile">
@@ -48,23 +55,28 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
         <li class="socials-mobile">
           <a
-            title="Github"
+            title="Get in touch via mail"
+            class="button-navigation mail-icon"
+            href="mailto:benzinger.marcel@gmail.com?subject=Contact%20from%20portfolio%20website&amp;body=Add%20some%20text..."
+          >
+          </a>
+          <a
+            title="See my Github profile"
+            class="button-navigation github-icon"
             href="https://github.com/marbenz2"
             target="_blank"
             rel="noopener noreferrer"
-            ><img src="./assets/icons8-github-50.png" alt="Github"
-          /></a>
+          ></a>
           <a
-            title="LinkedIn"
+            title="Get in touch via Linkedin"
+            class="button-navigation linkedin-icon"
             href="https://www.linkedin.com/in/marcel-benzinger-a9a57211b/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="./assets/icons8-linkedin-50.png" alt="Linked In"
-          /></a>
+          </a>
         </li>
       </ul>
     </nav>
@@ -88,133 +100,168 @@
         />
       </aside>
     </header>
-    <section id="about" class="container-content">
-      <h2 class="accent-color">ABOUT ME</h2>
-      <div class="card-content">
-        <h4>
-          I'm a 37 years old self-taught Frontend Web Developer with two years
-          of experience. My passion for coding and designing drives me to create
-          seamless user experiences.<br />I thrive on challenges, continuously
-          improving and adapting to the ever-changing tech landscape.<br /><br />Let's
-          work together and bring your projects to life!
-        </h4>
-      </div>
-    </section>
-    <section id="skills" class="container-content">
-      <h2 class="accent-color">SKILLS</h2>
-      <div class="card-content">
-        <ul class="item-wrapper">
-          <li class="direction-column center-items">
-            <img src="./assets/icons8-html-50.png" alt="HTML" width="50" />
-            <h6>HTML</h6>
-          </li>
-          <li class="direction-column center-items">
-            <img src="./assets/icons8-css-50.png" alt="CSS" width="50" />
-            <h6>CSS</h6>
-          </li>
-          <li class="direction-column center-items">
-            <img
-              src="./assets/icons8-tailwind-css-50.png"
-              alt="Tailwind"
-              width="50"
-            />
-            <h6>Tailwind</h6>
-          </li>
-          <li class="direction-column center-items">
-            <img
-              src="./assets/icons8-javascript-50.png"
-              alt="Javascript"
-              width="50"
-            />
-            <h6>Javascript</h6>
-          </li>
-          <li class="direction-column center-items">
-            <img
-              src="./assets/icons8-react-native-50.png"
-              alt="React"
-              width="50"
-            />
-            <h6>React</h6>
-          </li>
-          <li class="direction-column center-items">
-            <img src="./assets/icons8-node-js-50.png" alt="NodeJs" width="50" />
-            <h6>node.js</h6>
-          </li>
-          <li class="direction-column center-items">
-            <img src="./assets/icons8-sql-50.png" alt="SQL" width="50" />
-            <h6>PostgreSQL</h6>
-          </li>
-          <li class="direction-column center-items">
-            <img
-              src="./assets/icons8-mongo-db-50.png"
-              alt="MongoDb"
-              width="50"
-            />
-            <h6>Mongo DB</h6>
-          </li>
-          <li class="direction-column center-items">
-            <img src="./assets/icons8-git-50.png" alt="Git" width="50" />
-            <h6>Git</h6>
-          </li>
-          <li class="direction-column center-items">
-            <img
-              src="./assets/icons8-benutzergruppen-50.png"
-              alt="Teamplayer"
-              width="50"
-            />
-            <h6>Teamplayer</h6>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section id="projects" class="container-content">
-      <h2 class="accent-color">PROJECTS</h2>
-      <div class="container-project">
-        <div class="card-project">
-          <img
-            class="project-image"
-            src="./assets/MABENZ-Portfolio.png"
-            alt="MABENZ Portfolio"
-          />
-          <div class="info">
-            <h5>
-              MARBENZ Portfolio <br />
-              <span class="badge">Website</span>
-            </h5>
+    <main class="container-content">
+      <div class="content-merger">
+        <section id="about" class="content-sizing">
+          <h2 class="heading-position accent-color">ABOUT ME</h2>
 
-            <p>Mein erstes kleines Projekt für mein eigenes Portfolio.</p>
-            <div class="project-footer">
-              <div class="container-badge direction-row">
-                <div class="badge">HTML</div>
-                <div class="badge">CSS</div>
-                <div class="badge">JS</div>
-              </div>
-              <div class="project-action">
-                <div class="direction-column center-items">
-                  <a
-                    title="Github"
-                    href="https://github.com/marbenz2/portfolio-mabenz"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    ><img
-                      src="./assets/icons8-github-50.png"
-                      alt="Github"
-                      width="30"
-                  /></a>
-                  <h6>Github</h6>
+          <div class="card-content">
+            <h4>
+              I am a 37 years old self-taught front-end developer with two years
+              of experience.<br /><br />
+              I have a strong passion for coding and designing, and my main goal
+              is to create user experiences that are incredibly smooth and
+              user-friendly. I enjoy taking on challenges and constantly
+              improving my skills to keep up with the rapidly evolving world of
+              technology.<br /><br />Let's work together and bring your ideas
+              and projects to life!
+            </h4>
+          </div>
+        </section>
+        <section id="skills" class="content-sizing">
+          <h2 class="heading-position accent-color">SKILLS</h2>
+          <div class="card-content">
+            <ul class="item-wrapper">
+              <li class="direction-column center-items">
+                <img
+                  src="./assets/icons/icons8-html-50.png"
+                  alt="HTML"
+                  width="50"
+                />
+                <h6>HTML</h6>
+              </li>
+              <li class="direction-column center-items">
+                <img
+                  src="./assets/icons/icons8-css-50.png"
+                  alt="CSS"
+                  width="50"
+                />
+                <h6>CSS</h6>
+              </li>
+              <li class="direction-column center-items">
+                <img
+                  src="./assets/icons/icons8-tailwind-css-50.png"
+                  alt="Tailwind"
+                  width="50"
+                />
+                <h6>Tailwind</h6>
+              </li>
+              <li class="direction-column center-items">
+                <img
+                  src="./assets/icons/icons8-javascript-50.png"
+                  alt="Javascript"
+                  width="50"
+                />
+                <h6>Javascript</h6>
+              </li>
+              <li class="direction-column center-items">
+                <img
+                  src="./assets/icons/icons8-react-native-50.png"
+                  alt="React"
+                  width="50"
+                />
+                <h6>React</h6>
+              </li>
+              <li class="direction-column center-items">
+                <img
+                  src="./assets/icons/icons8-node-js-50.png"
+                  alt="NodeJs"
+                  width="50"
+                />
+                <h6>node.js</h6>
+              </li>
+              <li class="direction-column center-items">
+                <img
+                  src="./assets/icons/icons8-sql-50.png"
+                  alt="SQL"
+                  width="50"
+                />
+                <h6>PostgreSQL</h6>
+              </li>
+              <li class="direction-column center-items">
+                <img
+                  src="./assets/icons/icons8-mongo-db-50.png"
+                  alt="MongoDb"
+                  width="50"
+                />
+                <h6>Mongo DB</h6>
+              </li>
+              <li class="direction-column center-items">
+                <img
+                  src="./assets/icons/icons8-git-50.png"
+                  alt="Git"
+                  width="50"
+                />
+                <h6>Git</h6>
+              </li>
+              <li class="direction-column center-items">
+                <img
+                  src="./assets/icons/icons8-benutzergruppen-50.png"
+                  alt="Teamplayer"
+                  width="50"
+                />
+                <h6>Teamplayer</h6>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+    <section id="projects" class="container-content">
+      <h2 class="heading-position accent-color">PROJECTS</h2>
+      <div class="card-content">
+        <div class="container-project">
+          <div class="card-project">
+            <img
+              class="project-image"
+              src="./assets/MABENZ-Portfolio.png"
+              alt="MABENZ Portfolio"
+            />
+            <div class="container-info">
+              <h5>
+                MARBENZ Portfolio <br />
+                <span class="badge-secondary">Website</span>
+              </h5>
+              <article class="project-info">
+                <p>
+                  For my first project i decided to create a personal portfolio
+                  website. The goal was to create a simple and not
+                  overcomplicated single-page website.
+                </p>
+              </article>
+              <div class="project-footer">
+                <div class="container-badge direction-row">
+                  <div class="badge">HTML</div>
+                  <div class="badge">CSS</div>
+                  <div class="badge">JS</div>
                 </div>
-                <div class="direction-column center-items">
-                  <a
-                    title="Live"
-                    href="https://github.com/marbenz2/portfolio-mabenz"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    ><img
-                      src="./assets/icons8-youtube-live-50.png"
-                      alt="Github"
-                      width="30"
-                  /></a>
-                  <h6>Live</h6>
+                <div class="project-action">
+                  <div class="direction-column center-items">
+                    <a
+                      title="Github"
+                      href="https://github.com/marbenz2/portfolio-mabenz"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img
+                        src="./assets/icons/icons8-github-50.png"
+                        alt="Github"
+                        width="30"
+                    /></a>
+                    <h6>Github</h6>
+                  </div>
+                  <div class="direction-column center-items">
+                    <a
+                      title="Live"
+                      href="https://marbenz2.github.io/portfolio-mabenz/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img
+                        src="./assets/icons/icons8-youtube-live-50.png"
+                        alt="Github"
+                        width="30"
+                    /></a>
+                    <h6>Live</h6>
+                  </div>
                 </div>
               </div>
             </div>
@@ -223,35 +270,17 @@
       </div>
     </section>
     <section id="contact" class="container-content">
-      <h2 class="accent-color">CONTACT</h2>
-      <form class="container-form center" action="#home" method="POST">
-        <div class="container-info">
-          <div class="direction-column">
-            <label class="label" for="name">Name</label>
-            <input class="input" type="text" name="name" id="name" required />
-          </div>
-          <div class="direction-column">
-            <label class="label" for="email">Email</label>
-            <input
-              class="input"
-              type="email"
-              name="email"
-              id="email"
-              required
-            />
-          </div>
+      <h2 class="heading-position accent-color">CONTACT</h2>
+      <div class="card-content">
+        <div class="container-contact">
+          <a
+            class="button"
+            href="mailto:benzinger.marcel@gmail.com?subject=Contact%20from%20portfolio%20website&amp;body=Add%20some%20text..."
+          >
+            <h3>Get in touch</h3>
+          </a>
         </div>
-        <div class="direction-column">
-          <label class="label" for="message">Nachricht</label>
-          <textarea
-            class="textarea"
-            name="message"
-            id="message"
-            required
-          ></textarea>
-        </div>
-        <button type="submit">Send</button>
-      </form>
+      </div>
     </section>
     <footer>© 2023 - MABENZ</footer>
     <a title="Home Button" href="#home" id="home-btn" class="home-btn"
