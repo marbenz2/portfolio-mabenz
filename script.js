@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function toggleMenu() {
   document.getElementById("nav-button-mobile").classList.toggle("change");
   document.getElementById("nav-menu-mobile").classList.toggle("toggle");
+  document.body.classList.toggle("fixed");
 
   // Close the menu when the user clicks a link
   const links = document.querySelectorAll("#nav-links-mobile a");
