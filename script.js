@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const headerHeight = document.getElementById("main").offsetHeight;
 
   function scrollFunction() {
-    const homeBtn = document.getElementById("home-btn");
+    const homeBtn = document.getElementById("btn-home");
     const scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
     if (scrollPosition > headerHeight) {
@@ -21,15 +21,15 @@ document.addEventListener("DOMContentLoaded", () => {
 // MOBILE MENU TOGGLE ---------------------------------------------------------
 
 function toggleMenu() {
-  document.getElementById("nav-menu-mobile").classList.toggle("change");
-  document.getElementById("nav-links-mobile").classList.toggle("toggle");
+  document.getElementById("nav-button-mobile").classList.toggle("change");
+  document.getElementById("nav-menu-mobile").classList.toggle("toggle");
 
   // Close the menu when the user clicks a link
   const links = document.querySelectorAll("#nav-links-mobile a");
   links.forEach((link) => {
     link.addEventListener("click", () => {
-      document.getElementById("nav-links-mobile").classList.remove("toggle");
-      document.getElementById("nav-menu-mobile").classList.remove("change");
+      document.getElementById("nav-menu-mobile").classList.remove("toggle");
+      document.getElementById("nav-button-mobile").classList.remove("change");
     });
   });
 
@@ -37,11 +37,11 @@ function toggleMenu() {
   document.addEventListener("click", (event) => {
     const targetElement = event.target;
     if (
-      targetElement.closest("#nav-links-mobile") &&
-      !targetElement.closest("#nav-menu-mobile")
+      targetElement.closest("#nav-menu-mobile") &&
+      !targetElement.closest("#nav-button-mobile")
     ) {
-      document.getElementById("nav-links-mobile").classList.remove("toggle");
-      document.getElementById("nav-menu-mobile").classList.remove("change");
+      document.getElementById("nav-menu-mobile").classList.remove("toggle");
+      document.getElementById("nav-button-mobile").classList.remove("change");
       // Also reset the class "change" if needed
       // props.classList.remove("change");
     }

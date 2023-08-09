@@ -9,12 +9,16 @@
   <body>
     <nav id="home" class="nav-bar">
       <div class="nav-logo">
-        <img class="logo" src="./assets/logo.png" alt="mabenz-logo" />
+        <img
+          class="logo"
+          src="./assets/logo.png"
+          alt="A Logo for MABENZ Portfolio Website."
+        />
       </div>
       <div
         title="Mobile Menu"
-        id="nav-menu-mobile"
-        class="nav-menu-mobile"
+        id="nav-button-mobile"
+        class="nav-button-mobile"
         onclick="toggleMenu()"
       >
         <div class="bar1"></div>
@@ -22,27 +26,27 @@
         <div class="bar3"></div>
       </div>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li class="link"><a href="#about">About</a></li>
+        <li class="link"><a href="#skills">Skills</a></li>
+        <li class="link"><a href="#projects">Projects</a></li>
       </ul>
-      <div class="nav-social">
+      <div class="nav-social link">
         <a
           title="Get in touch via mail"
-          class="button-navigation mail-icon"
+          class="icon-navigation mail-icon"
           href="mailto:benzinger.marcel@gmail.com?subject=Contact%20from%20portfolio%20website&amp;body=Add%20some%20text..."
         >
         </a>
         <a
           title="See my Github profile"
-          class="button-navigation github-icon"
+          class="icon-navigation github-icon"
           href="https://github.com/marbenz2"
           target="_blank"
           rel="noopener noreferrer"
         ></a>
         <a
           title="Get in touch via Linkedin"
-          class="button-navigation linkedin-icon"
+          class="icon-navigation linkedin-icon"
           href="https://www.linkedin.com/in/marcel-benzinger-a9a57211b/"
           target="_blank"
           rel="noopener noreferrer"
@@ -50,28 +54,28 @@
         </a>
       </div>
     </nav>
-    <nav id="nav-links-mobile" class="nav-links-mobile">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li class="socials-mobile">
+    <nav id="nav-menu-mobile" class="nav-menu-mobile">
+      <ul class="nav-links">
+        <li class="link"><a href="#about">About</a></li>
+        <li class="link"><a href="#skills">Skills</a></li>
+        <li class="link"><a href="#projects">Projects</a></li>
+        <li class="nav-socials-mobile link">
           <a
             title="Get in touch via mail"
-            class="button-navigation mail-icon"
+            class="icon-navigation mail-icon"
             href="mailto:benzinger.marcel@gmail.com?subject=Contact%20from%20portfolio%20website&amp;body=Add%20some%20text..."
           >
           </a>
           <a
             title="See my Github profile"
-            class="button-navigation github-icon"
+            class="icon-navigation github-icon"
             href="https://github.com/marbenz2"
             target="_blank"
             rel="noopener noreferrer"
           ></a>
           <a
             title="Get in touch via Linkedin"
-            class="button-navigation linkedin-icon"
+            class="icon-navigation linkedin-icon"
             href="https://www.linkedin.com/in/marcel-benzinger-a9a57211b/"
             target="_blank"
             rel="noopener noreferrer"
@@ -81,7 +85,7 @@
       </ul>
     </nav>
     <header id="main" class="container-header">
-      <aside class="header-left text-right">
+      <aside class="content-header">
         <h1>
           Hi, I'm <br />
           <span id="f-name" class="slide-in-left accent-color">Marcel</span>
@@ -92,17 +96,17 @@
           beautiful things from scratch.
         </h3>
       </aside>
-      <aside class="header-right">
+      <aside class="content-header">
         <img
-          class="slide-in-right header-img"
+          class="slide-in-right header-img center-self"
           src="./assets/avatar.png"
           alt="MABENZ"
         />
       </aside>
     </header>
-    <main class="container-content">
-      <div class="content-merger">
-        <section id="about" class="content-sizing">
+    <section class="container-content">
+      <div class="section-merger">
+        <section id="about" class="section-sizing">
           <h2 class="heading-position accent-color">ABOUT ME</h2>
           <div class="card-content">
             <p>
@@ -117,7 +121,7 @@
             </p>
           </div>
         </section>
-        <section id="skills" class="content-sizing">
+        <section id="skills" class="section-sizing">
           <h2 class="heading-position accent-color">SKILLS</h2>
           <div class="card-content">
             <ul class="item-wrapper">
@@ -205,21 +209,21 @@
           </div>
         </section>
       </div>
-    </main>
+    </section>
     <section id="projects" class="container-content">
       <h2 class="heading-position accent-color">PROJECTS</h2>
       <div class="card-content">
         <div class="container-project">
           <div class="card-project">
             <img
-              class="project-image"
+              class="project-img"
               src="./assets/MABENZ-Portfolio.png"
               alt="MABENZ Portfolio"
             />
-            <div class="container-info">
+            <div class="container-project-info">
               <h5>
-                MARBENZ Portfolio <br />
-                <span class="badge-secondary">Website</span>
+                MARBENZ Portfolio
+                <div class="badge badge-secondary">Website</div>
               </h5>
               <article class="project-info">
                 <p>
@@ -230,11 +234,11 @@
               </article>
               <div class="project-footer">
                 <div class="container-badge direction-row">
-                  <div class="badge">HTML</div>
-                  <div class="badge">CSS</div>
-                  <div class="badge">JS</div>
+                  <div class="badge badge-primary">HTML</div>
+                  <div class="badge badge-primary">CSS</div>
+                  <div class="badge badge-primary">JS</div>
                 </div>
-                <div class="project-action">
+                <div class="project-links">
                   <div class="direction-column center-items">
                     <a
                       title="Github"
@@ -273,7 +277,7 @@
       <div class="card-content">
         <div class="container-contact">
           <a
-            class="button"
+            class="btn-contact"
             href="mailto:benzinger.marcel@gmail.com?subject=Contact%20from%20portfolio%20website&amp;body=Add%20some%20text..."
           >
             <h3>Get in touch</h3>
@@ -281,8 +285,8 @@
         </div>
       </div>
     </section>
-    <footer>© 2023 - MABENZ</footer>
-    <a title="Home Button" href="#home" id="home-btn" class="home-btn"
+    <footer class="footer-center">© 2023 - MABENZ</footer>
+    <a title="Home Button" href="#home" id="btn-home" class="btn-home"
       ><span>&uarr;</span></a
     >
     <script src="script.js"></script>
