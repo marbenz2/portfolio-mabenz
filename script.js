@@ -29,8 +29,9 @@ function toggleMenu() {
   const links = document.querySelectorAll("#nav-links-mobile a");
   links.forEach((link) => {
     link.addEventListener("click", () => {
-      document.getElementById("nav-menu-mobile").classList.remove("toggle");
       document.getElementById("nav-button-mobile").classList.remove("change");
+      document.getElementById("nav-menu-mobile").classList.remove("toggle");
+      document.body.classList.remove("fixed");
     });
   });
 
@@ -41,8 +42,10 @@ function toggleMenu() {
       targetElement.closest("#nav-menu-mobile") &&
       !targetElement.closest("#nav-button-mobile")
     ) {
-      document.getElementById("nav-menu-mobile").classList.remove("toggle");
       document.getElementById("nav-button-mobile").classList.remove("change");
+      document.getElementById("nav-menu-mobile").classList.remove("toggle");
+      document.body.classList.remove("fixed");
+
       // Also reset the class "change" if needed
       // props.classList.remove("change");
     }
