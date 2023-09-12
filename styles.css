@@ -296,6 +296,7 @@ p {
 
 .mail-icon {
   background-image: var(--icon-mail-50);
+  scale: 0.5;
 }
 
 .icon-navigation.mail-icon:hover {
@@ -304,6 +305,7 @@ p {
 
 .github-icon {
   background-image: var(--icon-github-50);
+  scale: 0.5;
 }
 
 .icon-navigation.github-icon:hover {
@@ -312,6 +314,7 @@ p {
 
 .linkedin-icon {
   background-image: var(--icon-linkedin-50);
+  scale: 0.5;
 }
 
 .icon-navigation.linkedin-icon:hover {
