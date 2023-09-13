@@ -297,29 +297,32 @@ p {
 
 .mail-icon {
   background-image: var(--icon-mail-50);
-  scale: 0.5;
+  scale: 0.7;
 }
 
 .icon-navigation.mail-icon:hover {
   background-image: var(--icon-mail-50-accent);
+  scale: 1.2;
 }
 
 .github-icon {
   background-image: var(--icon-github-50);
-  scale: 0.5;
+  scale: 0.7;
 }
 
 .icon-navigation.github-icon:hover {
   background-image: var(--icon-github-50-accent);
+  scale: 1.2;
 }
 
 .linkedin-icon {
   background-image: var(--icon-linkedin-50);
-  scale: 0.5;
+  scale: 0.7;
 }
 
 .icon-navigation.linkedin-icon:hover {
   background-image: var(--icon-linkedin-50-accent);
+  scale: 1.2;
 }
 
 /* Buttons */
