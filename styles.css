@@ -626,14 +626,19 @@ p {
 
 .item-wrapper {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  gap: 1rem;
+  column-gap: .5rem;
+  row-gap: 1rem;
   height: fit-content;
+}
+
+.flex-item {
+  width: calc(33% - .5rem);
 }
 
 .section-merger {
   display: flex;
+  flex: auto;
   flex-direction: row;
   gap: 2rem;
 }
