@@ -201,21 +201,23 @@ p {
 /* Images - Icons */
 
 .logo {
-  width: 100%;
-  max-width: 450px;
+  max-width: 100%;
   object-fit: contain;
 }
 
 .header-img {
-  width: 600px;
+  max-width: 100%;
+  height: auto;
   border-radius: 100%;
 }
 
 .project-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  object-position: 0px -20px;
+  align-self: center;
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+  object-position: 0px 0px;
   border-radius: 10px;
 }
 
@@ -454,9 +456,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: space-between;
-  width: fit-content;
-  max-width: 60%;
+  width: 100%;
 }
 
 /* Section Projects */
@@ -554,8 +554,7 @@ p {
   /* Images - Icons */
 
   .logo {
-    width: 100%;
-    max-width: 350px;
+    width: 350px;
   }
 
   .link {
@@ -576,20 +575,11 @@ p {
 @media screen and (max-width: 1260px) {
   /* Images - Icons */
   .logo {
-    width: 100%;
-    max-width: 500px;
+    width: 500px;
   }
 
   .header-img {
     width: 400px;
-  }
-
-  .project-img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    object-position: 0 0px;
-    border-radius: 10px;
   }
 
   /* Buttons */
@@ -728,19 +718,11 @@ p {
 
   /* Images - Icons */
   .logo {
-    max-width: 348px;
+    width: 348px;
   }
 
   .header-img {
     width: 200px;
-  }
-
-  .project-img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    object-position: 0 0px;
-    border-radius: 10px;
   }
 
   /* Buttons */
