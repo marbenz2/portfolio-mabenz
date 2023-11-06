@@ -395,7 +395,7 @@ p {
 
 .container-project {
   display: flex;
-  width: 100%;
+  width: fit-content;
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -428,6 +428,7 @@ p {
   backdrop-filter: blur(10px);
   width: 100%;
   height: 100%;
+  gap: 1rem;
   padding: 4rem 1rem 1rem 1rem;
   border-radius: 10px;
   /*   border-left: var(--color-accent) 3px solid; */
@@ -445,7 +446,7 @@ p {
   padding: 1rem;
   border-radius: 10px;
   border: var(--color-accent) 1px solid;
-  width: calc(50% - 2rem);
+
   flex-shrink: 1;
   gap: 1rem;
 }
@@ -677,6 +678,10 @@ p {
   .card-project {
     flex-direction: row;
     width: 100%;
+  }
+
+  .card-content {
+    flex-direction: column;
   }
 
   /* Section Header */
